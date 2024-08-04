@@ -1,0 +1,177 @@
+* {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('./img/suxofruct_bg1.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-weight: bold;
+
+}
+
+
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6347;
+}
+
+.about {
+    background: palegoldenrod;
+}
+
+.about,
+.products,
+.contact {
+    /* padding: 50px 20px; */
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+.products .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.products {
+    background: palegoldenrod;
+}
+
+.products p {
+    font-size: 16px;
+}
+
+.products h2 {
+    padding-bottom: 20px;
+}
+
+.product-item h3 {
+    border-bottom: black solid 1px;
+    padding-bottom: 5px;
+}
+
+.product-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    background-color: palegoldenrod;
+}
+
+.contact h2 {
+    padding-bottom: 20px;
+}
+
+.contact p {
+    padding-bottom: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
